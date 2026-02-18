@@ -206,17 +206,17 @@ The `docusaurus-edits.instructions.md` must cover:
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 2B.1 | [ ] | Create `shape-the-work/` category: `_category_.json` (position: 2, label: "Shape the Work") | 1 | Category appears second in sidebar | - | |
-| 2B.2 | [ ] | Create `shape-the-work/overview.md` (sidebar_position: 1) — Why shaping prevents building the wrong thing. DORA insight: lead time starts at backlog. Mermaid: shaping workflow from PRD → Backlog → Sprint Plan | 2 | Page renders with mermaid workflow diagram | - | |
-| 2B.3 | [ ] | Create `shape-the-work/requirements-architecture.md` (sidebar_position: 2) — PRD/BRD/ADR/Security Plan builders. Decision matrix: when to use which. Artifact chain diagram | 2 | Decision matrix present, links to Build the Work | - | |
-| 2B.4 | [ ] | Create `shape-the-work/backlog-management.md` (sidebar_position: 3) — GitHub Backlog Manager flow: Discover→Triage→Sprint→Execute. 3-tier autonomy model. Handoff file contract. Mermaid: 4-workflow pipeline | 2 | Pipeline diagram renders, autonomy tiers explained | - | Crown jewel of this segment |
-| 2B.5 | [ ] | Create `shape-the-work/ado-integration.md` (sidebar_position: 4) — ADO parallel flow. When to use ADO vs GitHub | 1 | ADO flow documented, cross-platform comparison present | - | |
+| 2B.1 | [x] | Create `shape-the-work/` category: `_category_.json` (position: 2, label: "Shape the Work") | 1 | Category appears second in sidebar | - | |
+| 2B.2 | [x] | Create `shape-the-work/overview.md` (sidebar_position: 1) — Why shaping prevents building the wrong thing. DORA insight: lead time starts at backlog. Mermaid: shaping workflow from PRD → Backlog → Sprint Plan | 2 | Page renders with mermaid workflow diagram | - | |
+| 2B.3 | [x] | Create `shape-the-work/requirements-architecture.md` (sidebar_position: 2) — PRD/BRD/ADR/Security Plan builders. Decision matrix: when to use which. Artifact chain diagram | 2 | Decision matrix present, links to Build the Work | - | |
+| 2B.4 | [x] | Create `shape-the-work/backlog-management.md` (sidebar_position: 3) — GitHub Backlog Manager flow: Discover→Triage→Sprint→Execute. 3-tier autonomy model. Handoff file contract. Mermaid: 4-workflow pipeline | 2 | Pipeline diagram renders, autonomy tiers explained | - | Crown jewel of this segment |
+| 2B.5 | [x] | Create `shape-the-work/ado-integration.md` (sidebar_position: 4) — ADO parallel flow. When to use ADO vs GitHub | 1 | ADO flow documented, cross-platform comparison present | - | |
 
 ### Acceptance Criteria
 
-* [ ] `shape-the-work/` category visible with 4 ordered pages
-* [ ] Mermaid diagrams render on overview and backlog-management pages
-* [ ] Cross-links to getting-started and build-the-work sections work
+* [x] `shape-the-work/` category visible with 4 ordered pages
+* [x] Mermaid diagrams render on overview and backlog-management pages
+* [x] Cross-links to getting-started sections work (build-the-work deferred to Phase 2C/4)
 
 ---
 
@@ -422,7 +422,7 @@ These principles apply across Phases 2, 2B, 2C, and 2D:
 
 * [x] Phase 1: Scaffold Docusaurus Project
 * [x] Phase 2: Content — Getting Started & Instructions File
-* [ ] Phase 2B: Content — Shape the Work
+* [x] Phase 2B: Content — Shape the Work
 * [ ] Phase 2C: Content — Build the Work
 * [ ] Phase 2D: Content — Ship It & Reference
 * [ ] Phase 3: GitHub Actions Deploy Workflow
@@ -439,3 +439,4 @@ This plan must be validated before creating tasks. After reviewing this plan:
 
 [^1]: Phase 1 implemented 2026-02-18. All 9 tasks complete. Docusaurus 3.9.2 scaffolded at docs/docusaurus/ with Mermaid theme, blog disabled, baseUrl /hve-core/. Justfile created. Dev server and build verified.
 [^2]: Phase 2 implemented 2026-02-18. 10 tasks complete (T007 removed per DYK). 5 content pages + 1 instructions file + sidebar rename. Build verified zero errors, all pages HTTP 200.
+[^3]: Phase 2B implemented 2026-02-18. 7 tasks complete. 4 content pages (shape-the-work/) + category config + cross-links to Getting Started + instructions file conventions update. Build verified zero errors.

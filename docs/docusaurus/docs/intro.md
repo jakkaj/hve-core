@@ -57,7 +57,7 @@ Three research frameworks inform the HVE approach:
 
 HVE-Core is a collection of prompts, agents, instructions, and skills for GitHub Copilot. It provides structured workflows for the phases of software delivery where AI assistance creates measurable improvement.
 
-**Strong coverage in shaping work**: PRD builders, backlog management flows, architecture decision records, security planning. The GitHub Backlog Manager orchestrates a complete pipeline from issue discovery through sprint planning.
+**Strong coverage in [shaping work](shape-the-work/overview)**: PRD builders, [backlog management flows](shape-the-work/backlog-management), architecture decision records, security planning. The GitHub Backlog Manager orchestrates a complete pipeline from issue discovery through sprint planning.
 
 **Deep coverage in building work**: The RPI (Research → Plan → Implement → Review) workflow provides phase-separated AI assistance that produces better results than unconstrained "just code it" approaches. Six language-specific instruction files apply coding conventions automatically. Code review, PR generation, and git operations are comprehensive.
 

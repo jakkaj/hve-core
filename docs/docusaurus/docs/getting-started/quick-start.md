@@ -56,8 +56,7 @@ When you are done, you will have a PRD that can feed directly into the backlog m
 | `@github-backlog-manager` | Orchestrates issue discovery, triage, sprint planning, and batch execution | `/github-discover-issues` in Copilot Chat |
 | `@adr-creation` | Guides you through Architecture Decision Records for technical choices | `@adr-creation` in Copilot Chat |
 
-<!-- TODO: Add link to shape-the-work/overview when Phase 2B lands -->
-**Go deeper**: The Shape the Work section covers requirements, backlog management, and ADO integration in detail.
+**Go deeper**: [Shape the Work](../shape-the-work/overview) covers requirements, backlog management, and ADO integration in detail.
 
 ## Path B: Implement Confidently Without Rework
 
