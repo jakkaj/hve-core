@@ -33,7 +33,7 @@ graph LR
     style L fill:#fff3e0,stroke:#FF9800,stroke-width:2px
 ```
 
-The insight from DORA and SPACE research: most engineering tooling investment goes into phases ③–④, but most organizations leak value in phases ①–② and ⑥. HVE-Core takes an unusual position by investing deeply in phase ② (Shape & Prioritize) alongside phase ③ (Build & Collaborate).
+The insight from [DORA](https://dora.dev) and [SPACE](https://cacm.acm.org/practice/the-space-of-developer-productivity/) research: most engineering tooling investment goes into phases ③–④, but most organizations leak value in phases ①–② and ⑥. HVE-Core takes an unusual position by investing deeply in phase ② (Shape & Prioritize) alongside phase ③ (Build & Collaborate).
 
 The value delivery loop follows the same principle as design thinking's Double Diamond: diverge (discover broadly) then converge (decide narrowly), repeated across each phase. Discovery is divergent exploration. Shaping is convergent prioritization. Building is divergent implementation. Verification is convergent validation. This isn't a coincidence — structured phase separation produces better outcomes whether you're designing a product or engineering software.
 
@@ -47,11 +47,11 @@ The pattern is predictable: organizations invest heavily in CI/CD automation, co
 
 Three research frameworks inform the HVE approach:
 
-**DORA Four Key Metrics** measure delivery performance: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery. Elite teams excel across all four, not by optimizing each independently but by tightening the feedback loops between them.
+**[DORA Four Key Metrics](https://dora.dev/guides/dora-metrics/)** measure delivery performance: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery. Elite teams excel across all four, not by optimizing each independently but by tightening the feedback loops between them.
 
-**SPACE Framework** (Satisfaction, Performance, Activity, Communication, Efficiency) pushes back against activity-only metrics. Developer satisfaction and communication quality are leading indicators of delivery outcomes, more so than raw commit counts or PR velocity.
+**[SPACE Framework](https://cacm.acm.org/practice/the-space-of-developer-productivity/)** (Satisfaction, Performance, Activity, Communication, Efficiency) pushes back against activity-only metrics. Developer satisfaction and communication quality are leading indicators of delivery outcomes, more so than raw commit counts or PR velocity.
 
-**ESSP (Engineering Systems Success Platform)** organizes measurement into four outcome zones: Developer Happiness, Quality, Velocity, and Business Outcomes. The practical insight is that the Quality zone bridges Velocity (how fast) and Impact (did it matter), and most organizations have a gap there.
+**[ESSP (Engineering Systems Success Playbook)](https://github.com/resources/insights/engineering-system-success-playbook)** organizes measurement into four outcome zones: Developer Happiness, Quality, Velocity, and Business Outcomes. The practical insight is that the Quality zone bridges Velocity (how fast) and Impact (did it matter), and most organizations have a gap there.
 
 ## What HVE-Core Provides
 

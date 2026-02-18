@@ -33,9 +33,9 @@ graph LR
     S -->|"New cycle"| B
 ```
 
-## The DORA Insight
+## The [DORA](https://dora.dev/guides/dora-metrics/) Insight
 
-DORA defines four key metrics for engineering performance. Ship It directly owns two of them:
+[DORA](https://dora.dev) defines four key metrics for engineering performance. Ship It directly owns two of them:
 
 | Metric | What It Measures | Where It Lives |
 |---|---|---|
@@ -46,9 +46,9 @@ DORA defines four key metrics for engineering performance. Ship It directly owns
 
 Elite teams excel at all four, not by optimizing each independently but by tightening the feedback loops between them. A team that deploys 47 times a day but takes a week to recover from failures is not elite. A team that deploys weekly but recovers in minutes and feeds every incident back into planning is closer to elite than the numbers suggest.
 
-## The ESSP Quality Zone
+## The [ESSP](https://github.com/resources/insights/engineering-system-success-playbook) Quality Zone
 
-The ESSP (Engineering Systems Success Platform) framework organizes measurement into four zones: Developer Happiness, Velocity, Quality, and Business Outcomes.
+The [ESSP (Engineering Systems Success Playbook)](https://github.com/resources/insights/engineering-system-success-playbook) framework organizes measurement into four zones: Developer Happiness, Velocity, Quality, and Business Outcomes.
 
 Ship It lives in the **Quality zone**, which bridges Velocity ([Build the Work](../build-the-work/overview)) and Impact (strategic business outcomes). Failed Deployment Recovery Time, Change Failure Rate, and operational resilience all sit here. This is where speed meets sustainability.
 

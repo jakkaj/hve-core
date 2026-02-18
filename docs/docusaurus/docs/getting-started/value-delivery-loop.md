@@ -44,7 +44,7 @@ The forward flow (①→②→③→④→⑤→⑥→①) is what most teams tr
 
 **What can go wrong**: Building the wrong thing perfectly. Teams optimize locally while the product drifts from market need. Strategy stays abstract and never translates into concrete, prioritized work items.
 
-**Which metrics apply**: SPACE Satisfaction (clarity of mission), ESSP Business Outcomes (are we pursuing the right opportunities). DORA metrics do not directly measure this phase, which is part of why it gets neglected.
+**Which metrics apply**: [SPACE](https://cacm.acm.org/practice/the-space-of-developer-productivity/) Satisfaction (clarity of mission), [ESSP](https://github.com/resources/insights/engineering-system-success-playbook) Business Outcomes (are we pursuing the right opportunities). [DORA](https://dora.dev/guides/dora-metrics/) metrics do not directly measure this phase, which is part of why it gets neglected.
 
 **Where HVE-Core helps**: Risk register and security plan creator support strategic assessment. This phase has the most room to grow, and contributions here are especially impactful.
 
@@ -131,9 +131,9 @@ This is HVE-Core's second-deepest area, with 20 artifacts across two complete ba
 | **Communication** | Stakeholder alignment | Cross-team prioritization | PR review cycles | CI/CD signal clarity | Incident comms | Knowledge sharing |
 | **Efficiency** | Idea-to-backlog time | Backlog-to-sprint time | Cycle time | Build time | Deploy time | Learning-to-action time |
 
-## How ESSP Zones Layer On Top
+## How [ESSP](https://github.com/resources/insights/engineering-system-success-playbook) Zones Layer On Top
 
-Where DORA gives you four metrics and SPACE gives you five dimensions, ESSP organizes the conversation into four outcome zones:
+Where DORA gives you four metrics and SPACE gives you five dimensions, the [Engineering Systems Success Playbook](https://github.com/resources/insights/engineering-system-success-playbook) organizes the conversation into four outcome zones:
 
 **Developer Happiness**: Are engineers satisfied with their tools, processes, and work environment? This is measured through SPACE's Satisfaction dimension, but ESSP treats it as a first-class outcome rather than a secondary indicator.
 
