@@ -86,4 +86,4 @@ Two additional tools complement the requirements builders:
 
 **`@arch-diagram-builder`** is listed in the decision matrix above. It creates ASCII diagrams that live in markdown and travel with the codebase.
 
-For the complete list of all HVE-Core artifacts with their value assessments, see the Reference section (coming soon).
+For the complete list of all HVE-Core artifacts with their value assessments, see the [All Artifacts A-Z](../reference/all-artifacts) reference.

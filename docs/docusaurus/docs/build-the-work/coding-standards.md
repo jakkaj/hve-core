@@ -26,6 +26,8 @@ This page covers which standards are available, how to add your own, and a cleve
 
 Each instruction file targets a specific language version and includes conventions for naming, structure, error handling, documentation, and a complete example demonstrating all patterns.
 
+The Bicep and Terraform instructions are coding standards that help you write infrastructure code correctly. For the relationship between writing IaC and deploying it, see [Infrastructure as Code](../ship-it/infrastructure-as-code).
+
 ## Adding Your Own Standards
 
 Create a file in `.github/instructions/` with an `applyTo` pattern:

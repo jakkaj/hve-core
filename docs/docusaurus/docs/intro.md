@@ -61,11 +61,10 @@ HVE-Core is a collection of prompts, agents, instructions, and skills for GitHub
 
 **Deep coverage in [building work](build-the-work/overview)**: The [RPI](build-the-work/rpi-workflow) (Research → Plan → Implement → Review) workflow provides phase-separated AI assistance that produces better results than unconstrained "just code it" approaches. Six language-specific instruction files apply coding conventions automatically. Code review, PR generation, and git operations are comprehensive.
 
-<!-- TODO: link to ship-it/overview when Phase 2D lands -->
-**Emerging coverage in shipping**: Incident response workflows, IaC coding conventions for Bicep and Terraform, and operational risk assessment.
+**Growing coverage in [shipping work](ship-it/overview)**: [Incident response](ship-it/incident-response) workflows, [IaC coding conventions](ship-it/infrastructure-as-code) for Bicep and Terraform, and operational risk assessment. Ship It is HVE-Core's area of most active growth, with a clear [roadmap](ship-it/whats-coming) for release management, SLO tooling, and feedback loop automation.
 
 :::note What's on the horizon
-Release management, progressive delivery, SLO/SLA tooling, telemetry analysis, and retrospective facilitation are active areas of growth. HVE-Core focuses first on phases where AI-assisted workflows create the clearest improvement, and expands from there. The Ship It section covers what exists today and what is coming next.
+Release management, progressive delivery, SLO/SLA tooling, telemetry analysis, and retrospective facilitation are active areas of growth. HVE-Core focuses first on phases where AI-assisted workflows create the clearest improvement, and expands from there. The [Ship It](ship-it/overview) section covers what exists today and [what is coming next](ship-it/whats-coming).
 :::
 
 <!-- TODO: This heatmap is static text. Consider generating from artifact inventory if it becomes a maintenance burden -->

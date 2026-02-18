@@ -12,10 +12,6 @@ Your role determines which artifacts matter. A product manager managing a GitHub
 
 Pick the path that matches your outcome, not your job title. Each path gives you one artifact to try right now, three artifacts to learn first, and a pointer to the site section that covers your workflow in depth.
 
-:::note Site sections are being built progressively
-The Shape the Work, Build the Work, and Ship It sections are under active development. Links to those sections will be added as content lands. For now, the descriptions below explain what each section will cover.
-:::
-
 ## What Do You Need to Do?
 
 ```mermaid
@@ -96,8 +92,8 @@ Open Copilot Chat and type `/incident-response`. Describe an incident scenario. 
 Ship It is where HVE-Core is growing fastest. Release management, SLO tooling, and monitoring automation are on the roadmap. The Ship It section covers what is available today and what is coming next.
 :::
 
-<!-- TODO: Add link to ship-it/overview when Phase 2D lands -->
-**Go deeper**: The Ship It section covers incident response, IaC conventions, and the roadmap for future operations tooling.
+<!-- Ship It link resolved in Phase 2D -->
+**Go deeper**: [Ship It](../ship-it/overview) covers incident response, IaC conventions, and the roadmap for future operations tooling.
 
 ## Path D: Understand What's Possible
 
@@ -105,7 +101,7 @@ Ship It is where HVE-Core is growing fastest. Release management, SLO tooling, a
 
 **Your first 5 minutes**: Understand the architecture.
 
-Read [How HVE-Core Works](how-it-works) to understand the 4-layer model (Prompts, Agents, Instructions, Skills). Then browse the Reference section (coming soon) to see the complete artifact inventory organized by type.
+Read [How HVE-Core Works](how-it-works) to understand the 4-layer model (Prompts, Agents, Instructions, Skills). Then browse the [Reference](../reference/artifact-types) section to see the complete [artifact inventory](../reference/all-artifacts) organized by type.
 
 When you are ready to try something, come back to this page and pick Path A, B, or C based on what you do day-to-day.
 

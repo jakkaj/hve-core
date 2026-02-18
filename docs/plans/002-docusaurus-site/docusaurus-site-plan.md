@@ -268,24 +268,24 @@ The `docusaurus-edits.instructions.md` must cover:
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 2D.1 | [ ] | Create `ship-it/` category: `_category_.json` (position: 4, label: "Ship It") | 1 | Category appears fourth | - | |
-| 2D.2 | [ ] | Create `ship-it/overview.md` (sidebar_position: 1) — Why closing the loop matters. DORA: CFR + MTTR. ESSP Quality zone. Honest coverage assessment | 2 | Educational framing present, honest about gaps | - | |
-| 2D.3 | [ ] | Create `ship-it/incident-response.md` (sidebar_position: 2) — incident-response + risk-register prompts. How learnings feed back to Shape the Work | 1 | Prompts documented, feedback loop to Shape explained | - | |
-| 2D.4 | [ ] | Create `ship-it/infrastructure-as-code.md` (sidebar_position: 3) — Bicep + Terraform instruction files. "Writes IaC ≠ deploys IaC" distinction | 1 | Distinction clear, links to coding standards | - | |
-| 2D.5 | [ ] | Create `ship-it/whats-coming.md` (sidebar_position: 4) — Honest roadmap, aspirational diagram, contribution call-to-action | 1 | Roadmap present, contribution path clear | - | |
-| 2D.6 | [ ] | Create `reference/` category: `_category_.json` (position: 5, label: "Reference") | 1 | Category appears fifth | - | |
-| 2D.7 | [ ] | Create `reference/artifact-types.md` (sidebar_position: 1) — 4-layer model: Agents, Prompts, Instructions, Skills. Per-type: what it does, how activated, frontmatter contract | 2 | All 4 types documented with examples | - | |
-| 2D.8 | [ ] | Create `reference/frontmatter-schema.md` (sidebar_position: 2) — Complete schema tables for all 3 file types + platform support matrix (VS Code, CLI, Coding Agent, Claude Code) | 2 | Tables render correctly, platform matrix present | - | |
-| 2D.9 | [ ] | Create `reference/contributing-to-docs.md` (sidebar_position: 3) — How to write new Docusaurus pages, conventions from instructions file, how to add categories | 1 | Contribution workflow clear | - | |
-| 2D.10 | [ ] | Create `reference/all-artifacts.md` (sidebar_position: 4) — Complete catalog of all 70+ artifacts with name, type, description, segment, value tag (🟢/🟡/⚪/🔴) | 2 | Catalog complete, value tags present | - | |
+| 2D.1 | [x] | Create `ship-it/` category: `_category_.json` (position: 4, label: "Ship It") | 1 | Category appears fourth | - | |
+| 2D.2 | [x] | Create `ship-it/overview.md` (sidebar_position: 1) — Why closing the loop matters. DORA: CFR + MTTR. ESSP Quality zone. Honest coverage assessment | 2 | Educational framing present, honest about gaps | - | |
+| 2D.3 | [x] | Create `ship-it/incident-response.md` (sidebar_position: 2) — incident-response + risk-register prompts. How learnings feed back to Shape the Work | 1 | Prompts documented, feedback loop to Shape explained | - | |
+| 2D.4 | [x] | Create `ship-it/infrastructure-as-code.md` (sidebar_position: 3) — Bicep + Terraform instruction files. "Writes IaC ≠ deploys IaC" distinction | 1 | Distinction clear, links to coding standards | - | |
+| 2D.5 | [x] | Create `ship-it/whats-coming.md` (sidebar_position: 4) — Honest roadmap, aspirational diagram, contribution call-to-action | 1 | Roadmap present, contribution path clear | - | |
+| 2D.6 | [x] | Create `reference/` category: `_category_.json` (position: 5, label: "Reference") | 1 | Category appears fifth | - | |
+| 2D.7 | [x] | Create `reference/artifact-types.md` (sidebar_position: 1) — 4-layer model: Agents, Prompts, Instructions, Skills. Per-type: what it does, how activated, frontmatter contract | 2 | All 4 types documented with examples | - | |
+| 2D.8 | [x] | Create `reference/frontmatter-schema.md` (sidebar_position: 2) — Complete schema tables for all 3 file types + platform support matrix (VS Code, CLI, Coding Agent, Claude Code) | 2 | Tables render correctly, platform matrix present | - | |
+| 2D.9 | [x] | Create `reference/contributing-to-docs.md` (sidebar_position: 3) — How to write new Docusaurus pages, conventions from instructions file, how to add categories | 1 | Contribution workflow clear | - | |
+| 2D.10 | [x] | Create `reference/all-artifacts.md` (sidebar_position: 4) — Complete catalog of all 70+ artifacts with name, type, description, segment, value tag (🟢/🟡/⚪/🔴) | 2 | Catalog complete, value tags present | - | [^5] |
 
 ### Acceptance Criteria
 
-* [ ] `ship-it/` category visible with 4 ordered pages
-* [ ] `reference/` category visible with 4 ordered pages
-* [ ] Ship It acknowledges gaps honestly with "What's Coming" page
-* [ ] Reference catalog covers all artifacts with value tags
-* [ ] Cross-links to other segments work
+* [x] `ship-it/` category visible with 4 ordered pages
+* [x] `reference/` category visible with 4 ordered pages
+* [x] Ship It acknowledges gaps honestly with "What's Coming" page
+* [x] Reference catalog covers all artifacts with value tags
+* [x] Cross-links to other segments work
 
 ---
 
@@ -424,7 +424,7 @@ These principles apply across Phases 2, 2B, 2C, and 2D:
 * [x] Phase 2: Content — Getting Started & Instructions File
 * [x] Phase 2B: Content — Shape the Work
 * [x] Phase 2C: Content — Build the Work
-* [ ] Phase 2D: Content — Ship It & Reference
+* [x] Phase 2D: Content — Ship It & Reference
 * [ ] Phase 3: GitHub Actions Deploy Workflow
 * [ ] Phase 4: Integration and Validation
 
@@ -441,3 +441,4 @@ This plan must be validated before creating tasks. After reviewing this plan:
 [^2]: Phase 2 implemented 2026-02-18. 10 tasks complete (T007 removed per DYK). 5 content pages + 1 instructions file + sidebar rename. Build verified zero errors, all pages HTTP 200.
 [^3]: Phase 2B implemented 2026-02-18. 7 tasks complete. 4 content pages (shape-the-work/) + category config + cross-links to Getting Started + instructions file conventions update. Build verified zero errors.
 [^4]: Phase 2C implemented 2026-02-18. 9 tasks complete. 6 content pages (build-the-work/) including RPI crown jewel + category config + resolved 5 forward-link TODOs + added intro.md Build link. Build verified zero errors.
+[^5]: Phase 2D implemented 2026-02-18. 12 tasks complete. 8 content pages (4 ship-it/ + 4 reference/) + 2 category configs + resolved all remaining forward-link TODOs (intro.md, quick-start.md, coding-standards.md). Artifact catalog has 75 artifacts (25 instructions incl. docusaurus-edits). 5 DYK insights applied. Build verified zero errors, all pages HTTP 200.
