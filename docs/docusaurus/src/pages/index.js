@@ -20,7 +20,13 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            What is HVE? →
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to="/docs/getting-started/quick-start"
+            style={{marginLeft: '1rem'}}>
+            Quick Start
           </Link>
         </div>
       </div>
@@ -32,8 +38,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="AI-Driven Software Delivery"
+      description="Hyper Velocity Engineering for the full software delivery lifecycle — from shaping requirements to shipping and learning">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

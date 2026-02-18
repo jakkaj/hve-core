@@ -4,45 +4,47 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '📋 Shape the Work',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Turn ambiguity into actionable plans. PRD builders, backlog management
+        flows, architecture decision records, and sprint planning — from idea
+        to prioritized work items.
       </>
     ),
+    link: '/docs/shape-the-work/overview',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '🔨 Build the Work',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The RPI workflow (Research → Plan → Implement → Review) brings
+        disciplined, phase-separated AI assistance to coding. Six language
+        standards apply automatically as you write.
       </>
     ),
+    link: '/docs/build-the-work/overview',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '🚀 Ship It',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Close the feedback loop from production back to planning. Incident
+        response, IaC conventions, and a clear roadmap for release management
+        and observability tooling.
       </>
     ),
+    link: '/docs/ship-it/overview',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      <div className="text--center padding-horiz--md" style={{paddingTop: '2rem'}}>
+        <Heading as="h3">
+          <a href={link} style={{textDecoration: 'none', color: 'inherit'}}>{title}</a>
+        </Heading>
         <p>{description}</p>
       </div>
     </div>
