@@ -72,3 +72,4 @@ The concepts in this section matter regardless of tooling maturity. Teams that u
 - [Infrastructure as Code](infrastructure-as-code) — how Bicep and Terraform conventions fit into deployment
 - [What's Coming](whats-coming) — the roadmap and how to contribute
 - [Shape the Work: Overview](../shape-the-work/overview) — where learnings feed back into planning
+
