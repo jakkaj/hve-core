@@ -107,21 +107,22 @@ This is a documentation site scaffold — no application logic to unit test. Val
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 1.1 | [ ] | Run `npx create-docusaurus@latest docusaurus classic --javascript --package-manager npm` in `docs/` | 1 | `docs/docusaurus/` directory exists with `package.json` | - | `--package-manager npm` avoids interactive prompt |
-| 1.2 | [ ] | Install Mermaid theme: `npm install @docusaurus/theme-mermaid` in `docs/docusaurus/` | 1 | Package in `dependencies` | - | |
-| 1.3 | [ ] | Configure `docusaurus.config.js`: set `url: 'https://jakkaj.github.io'`, `baseUrl: '/hve-core/'`, `organizationName: 'jakkaj'`, `projectName: 'hve-core'`, set `markdown: { mermaid: true }`, add `'@docusaurus/theme-mermaid'` to `themes` array, set `blog: false` inside `@docusaurus/preset-classic` options | 2 | Config has all 4 URL values, `markdown.mermaid: true` AND `themes: ['@docusaurus/theme-mermaid']`, blog disabled in preset options | - | |
-| 1.4 | [ ] | Remove default blog content (`docs/docusaurus/blog/`) | 1 | Directory removed | - | |
-| 1.5 | [ ] | Remove default docs content (`docs/docusaurus/docs/`) except create a minimal `docs/intro.md` placeholder with title and one-line description so the build succeeds between phases | 1 | Default tutorial pages removed; `docs/intro.md` exists with valid frontmatter | - | Prevents build failure before Phase 2 |
-| 1.6 | [ ] | Add `docs/docusaurus/build/` and `docs/docusaurus/.docusaurus/` to root `.gitignore` | 1 | Patterns present in `.gitignore` | - | |
-| 1.7 | [ ] | Verify `npm start` launches dev server at `localhost:3000/hve-core/` | 1 | Landing page renders with hero component | - | |
-| 1.8 | [ ] | Verify `npm run build` in `docs/docusaurus/` completes with zero errors | 1 | Build succeeds, `build/` directory created | - | Early build gate |
+| 1.1 | [x] | Run `npx create-docusaurus@latest docusaurus classic --javascript --package-manager npm` in `docs/` | 1 | `docs/docusaurus/` directory exists with `package.json` | - | `--package-manager npm` avoids interactive prompt |
+| 1.2 | [x] | Install Mermaid theme: `npm install @docusaurus/theme-mermaid` in `docs/docusaurus/` | 1 | Package in `dependencies` | - | |
+| 1.3 | [x] | Configure `docusaurus.config.js`: set `url: 'https://jakkaj.github.io'`, `baseUrl: '/hve-core/'`, `organizationName: 'jakkaj'`, `projectName: 'hve-core'`, set `markdown: { mermaid: true }`, add `'@docusaurus/theme-mermaid'` to `themes` array, set `blog: false` inside `@docusaurus/preset-classic` options | 2 | Config has all 4 URL values, `markdown.mermaid: true` AND `themes: ['@docusaurus/theme-mermaid']`, blog disabled in preset options | - | |
+| 1.4 | [x] | Remove default blog content (`docs/docusaurus/blog/`) | 1 | Directory removed | - | |
+| 1.5 | [x] | Remove default docs content (`docs/docusaurus/docs/`) except create a minimal `docs/intro.md` placeholder with title and one-line description so the build succeeds between phases | 1 | Default tutorial pages removed; `docs/intro.md` exists with valid frontmatter | - | Prevents build failure before Phase 2 |
+| 1.6 | [x] | Add `docs/docusaurus/build/` and `docs/docusaurus/.docusaurus/` to root `.gitignore` | 1 | Patterns present in `.gitignore` | - | |
+| 1.7 | [x] | Verify `npm start` launches dev server at `localhost:3000/hve-core/` | 1 | Landing page renders with hero component | - | |
+| 1.8 | [x] | Verify `npm run build` in `docs/docusaurus/` completes with zero errors | 1 | Build succeeds, `build/` directory created | - | Early build gate |
+| 1.9 | [x] | Create `justfile` at project root with `docs-dev`, `docs-build`, `docs-serve` recipes that delegate to `docs/docusaurus/` | 1 | `just docs-dev` launches dev server, `just docs-build` runs production build | - | |
 
 ### Acceptance Criteria
 
-* [ ] `docs/docusaurus/package.json` exists with `@docusaurus/core` and `@docusaurus/theme-mermaid`
-* [ ] `npm start` in `docs/docusaurus/` shows default landing page
-* [ ] Blog section is not present
-* [ ] `.gitignore` excludes build artifacts
+* [x] `docs/docusaurus/package.json` exists with `@docusaurus/core` and `@docusaurus/theme-mermaid`
+* [x] `npm start` in `docs/docusaurus/` shows default landing page
+* [x] Blog section is not present
+* [x] `.gitignore` excludes build artifacts
 
 ---
 
@@ -419,7 +420,7 @@ These principles apply across Phases 2, 2B, 2C, and 2D:
 
 ### Phase Completion Checklist
 
-* [ ] Phase 1: Scaffold Docusaurus Project
+* [x] Phase 1: Scaffold Docusaurus Project
 * [ ] Phase 2: Content — Getting Started & Instructions File
 * [ ] Phase 2B: Content — Shape the Work
 * [ ] Phase 2C: Content — Build the Work
@@ -436,5 +437,5 @@ This plan must be validated before creating tasks. After reviewing this plan:
 
 ## Change Footnotes Ledger
 
-[^1]: [To be added during implementation via plan-6a]
+[^1]: Phase 1 implemented 2026-02-18. All 9 tasks complete. Docusaurus 3.9.2 scaffolded at docs/docusaurus/ with Mermaid theme, blog disabled, baseUrl /hve-core/. Justfile created. Dev server and build verified.
 [^2]: [To be added during implementation via plan-6a]

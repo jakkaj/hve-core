@@ -418,6 +418,10 @@ FodyWeavers.xsd
 # Extension build artifacts
 extension/LICENSE
 extension/CHANGELOG.md
+
+# Docusaurus build artifacts
+docs/docusaurus/build/
+docs/docusaurus/.docusaurus/
 extension/package.json
 extension/package.*.json
 extension/package.json.bak

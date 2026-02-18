@@ -118,14 +118,14 @@ flowchart TD
     classDef blocked fill:#F44336,stroke:#D32F2F,color:#fff
 
     subgraph Phase["Phase 1: Scaffold Docusaurus"]
-        T001["T001: Scaffold project"]:::pending
-        T002["T002: Install Mermaid"]:::pending
-        T003["T003: Configure site"]:::pending
-        T004["T004: Remove blog"]:::pending
-        T005["T005: Remove default docs"]:::pending
-        T006["T006: Update .gitignore"]:::pending
-        T007["T007: Verify dev server"]:::pending
-        T008["T008: Verify build"]:::pending
+        T001["T001: Scaffold project ✓"]:::completed
+        T002["T002: Install Mermaid ✓"]:::completed
+        T003["T003: Configure site ✓"]:::completed
+        T004["T004: Remove blog ✓"]:::completed
+        T005["T005: Remove default docs ✓"]:::completed
+        T006["T006: Update .gitignore ✓"]:::completed
+        T007["T007: Verify dev server ✓"]:::completed
+        T008["T008: Verify build ✓"]:::completed
 
         T001 --> T002
         T002 --> T003
@@ -137,12 +137,12 @@ flowchart TD
     end
 
     subgraph Files["Files"]
-        F1["docs/docusaurus/package.json"]:::pending
-        F2["docs/docusaurus/docusaurus.config.js"]:::pending
-        F3["docs/docusaurus/blog/"]:::pending
-        F4["docs/docusaurus/docs/"]:::pending
-        F5[".gitignore"]:::pending
-        F6["docs/docusaurus/build/"]:::pending
+        F1["docs/docusaurus/package.json ✓"]:::completed
+        F2["docs/docusaurus/docusaurus.config.js ✓"]:::completed
+        F3["docs/docusaurus/blog/ ✓ (deleted)"]:::completed
+        F4["docs/docusaurus/docs/ ✓"]:::completed
+        F5[".gitignore ✓"]:::completed
+        F6["docs/docusaurus/build/ ✓"]:::completed
     end
 
     T001 -.-> F1
@@ -161,14 +161,14 @@ flowchart TD
 
 | Task | Component(s)       | Files                                      | Status     | Comment                          |
 |------|--------------------|-------------------------------------------|------------|----------------------------------|
-| T001 | Project scaffold   | `docs/docusaurus/*`                        | ⬜ Pending | `npx create-docusaurus` output   |
-| T002 | Mermaid plugin     | `docs/docusaurus/package.json`             | ⬜ Pending | `npm install` adds dependency    |
-| T003 | Site configuration | `docs/docusaurus/docusaurus.config.js`     | ⬜ Pending | 8 config values to set           |
-| T004 | Blog cleanup       | `docs/docusaurus/blog/`                    | ⬜ Pending | Delete directory                 |
-| T005 | Docs cleanup       | `docs/docusaurus/docs/`                    | ⬜ Pending | Delete directory (replaced in P2)|
-| T006 | Gitignore update   | `.gitignore`                               | ⬜ Pending | Add 2 patterns                   |
-| T007 | Dev server verify  | (all)                                       | ⬜ Pending | `npm start` renders landing page |
-| T008 | Build verify       | `docs/docusaurus/build/`                   | ⬜ Pending | `npm run build` zero errors      |
+| T001 | Project scaffold   | `docs/docusaurus/*`                        | ✅ Complete | `npx create-docusaurus` output   |
+| T002 | Mermaid plugin     | `docs/docusaurus/package.json`             | ✅ Complete | `npm install` adds dependency    |
+| T003 | Site configuration | `docs/docusaurus/docusaurus.config.js`     | ✅ Complete | 8 config values to set           |
+| T004 | Blog cleanup       | `docs/docusaurus/blog/`                    | ✅ Complete | Delete directory                 |
+| T005 | Docs cleanup       | `docs/docusaurus/docs/`                    | ✅ Complete | Delete directory (replaced in P2)|
+| T006 | Gitignore update   | `.gitignore`                               | ✅ Complete | Add 2 patterns                   |
+| T007 | Dev server verify  | (all)                                       | ✅ Complete | `npm start` renders landing page |
+| T008 | Build verify       | `docs/docusaurus/build/`                   | ✅ Complete | `npm run build` zero errors      |
 
 ---
 
@@ -176,14 +176,15 @@ flowchart TD
 
 | Status | ID   | Task                                                                                                   | CS | Type   | Dependencies | Absolute Path(s)                                           | Validation                                                                               | Subtasks | Notes                                   |
 |--------|------|--------------------------------------------------------------------------------------------------------|----|--------|--------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|----------|-----------------------------------------|
-| [ ]    | T001 | Run `npx create-docusaurus@latest docusaurus classic --javascript --package-manager npm` in `docs/`    | 1  | Setup  | –            | /Users/jordanknight/repos/hve-core/docs/docusaurus/         | Directory exists with `package.json`, `docusaurus.config.js`, `sidebars.js`              | –        | `--package-manager npm` avoids prompt   |
-| [ ]    | T002 | Run `npm install @docusaurus/theme-mermaid` in `docs/docusaurus/`                                      | 1  | Setup  | T001         | /Users/jordanknight/repos/hve-core/docs/docusaurus/package.json | `@docusaurus/theme-mermaid` appears in `dependencies`                                    | –        | –                                       |
-| [ ]    | T003 | Edit `docusaurus.config.js`: set `url: 'https://jakkaj.github.io'`, `baseUrl: '/hve-core/'`, `organizationName: 'jakkaj'`, `projectName: 'hve-core'`, add `markdown: { mermaid: true }`, add `'@docusaurus/theme-mermaid'` to `themes` array, set `blog: false` in `@docusaurus/preset-classic` options | 2  | Core   | T001         | /Users/jordanknight/repos/hve-core/docs/docusaurus/docusaurus.config.js | Config has all 4 URL values, `markdown.mermaid: true`, themes array includes mermaid, blog disabled in preset | –        | 8 distinct config changes               |
-| [ ]    | T004 | Delete `docs/docusaurus/blog/` directory                                                               | 1  | Setup  | T003         | /Users/jordanknight/repos/hve-core/docs/docusaurus/blog/    | Directory no longer exists                                                               | –        | Default scaffold content                |
-| 1.5 | [ ] | Remove default docs content (`docs/docusaurus/docs/`) except create a minimal `docs/intro.md` placeholder with title and one-line description so the build succeeds between phases | 1 | Default tutorial pages removed; `docs/intro.md` exists with valid frontmatter | - | Prevents build failure before Phase 2 |
-| [ ]    | T006 | Add `.gitignore` patterns: `docs/docusaurus/build/` and `docs/docusaurus/.docusaurus/` under a `# Docusaurus` comment section | 1  | Setup  | T001         | /Users/jordanknight/repos/hve-core/.gitignore               | Both patterns present; follows existing directory-pattern style with trailing slash      | –        | Place near existing extension patterns  |
-| [ ]    | T007 | Verify `npm start` in `docs/docusaurus/` — dev server at `localhost:3000/hve-core/`                    | 1  | Verify | T005         | /Users/jordanknight/repos/hve-core/docs/docusaurus/         | Landing page renders with default Docusaurus hero; baseUrl path is `/hve-core/` not `/`  | –        | Manual visual check                     |
-| [ ]    | T008 | Verify `npm run build` in `docs/docusaurus/` — production build completes                              | 1  | Verify | T007         | /Users/jordanknight/repos/hve-core/docs/docusaurus/build/   | Build succeeds with zero errors; `build/` directory created with `index.html`            | –        | Early build gate before Phase 2 content |
+| [x]    | T001 | Run `npx create-docusaurus@latest docusaurus classic --javascript --package-manager npm` in `docs/`    | 1  | Setup  | –            | /Users/jordanknight/repos/hve-core/docs/docusaurus/         | Directory exists with `package.json`, `docusaurus.config.js`, `sidebars.js`              | –        | `--package-manager npm` avoids prompt   |
+| [x]    | T002 | Run `npm install @docusaurus/theme-mermaid` in `docs/docusaurus/`                                      | 1  | Setup  | T001         | /Users/jordanknight/repos/hve-core/docs/docusaurus/package.json | `@docusaurus/theme-mermaid` appears in `dependencies`                                    | –        | –                                       |
+| [x]    | T003 | Edit `docusaurus.config.js`: set `url: 'https://jakkaj.github.io'`, `baseUrl: '/hve-core/'`, `organizationName: 'jakkaj'`, `projectName: 'hve-core'`, add `markdown: { mermaid: true }`, add `'@docusaurus/theme-mermaid'` to `themes` array, set `blog: false` in `@docusaurus/preset-classic` options | 2  | Core   | T001         | /Users/jordanknight/repos/hve-core/docs/docusaurus/docusaurus.config.js | Config has all 4 URL values, `markdown.mermaid: true`, themes array includes mermaid, blog disabled in preset | –        | 8 distinct config changes               |
+| [x]    | T004 | Delete `docs/docusaurus/blog/` directory                                                               | 1  | Setup  | T003         | /Users/jordanknight/repos/hve-core/docs/docusaurus/blog/    | Directory no longer exists                                                               | –        | Default scaffold content                |
+| [x] | T005 | Remove default docs content (`docs/docusaurus/docs/`) except create a minimal `docs/intro.md` placeholder with title and one-line description so the build succeeds between phases | 1 | Default tutorial pages removed; `docs/intro.md` exists with valid frontmatter | - | Prevents build failure before Phase 2 |
+| [x]    | T006 | Add `.gitignore` patterns: `docs/docusaurus/build/` and `docs/docusaurus/.docusaurus/` under a `# Docusaurus` comment section | 1  | Setup  | T001         | /Users/jordanknight/repos/hve-core/.gitignore               | Both patterns present; follows existing directory-pattern style with trailing slash      | –        | Place near existing extension patterns  |
+| [x]    | T007 | Verify `npm start` in `docs/docusaurus/` — dev server at `localhost:3000/hve-core/`                    | 1  | Verify | T005         | /Users/jordanknight/repos/hve-core/docs/docusaurus/         | Landing page renders with default Docusaurus hero; baseUrl path is `/hve-core/` not `/`  | –        | Manual visual check                     |
+| [x]    | T008 | Verify `npm run build` in `docs/docusaurus/` — production build completes                              | 1  | Verify | T007         | /Users/jordanknight/repos/hve-core/docs/docusaurus/build/   | Build succeeds with zero errors; `build/` directory created with `index.html`            | –        | Early build gate before Phase 2 content |
+| [x]    | T009 | Create `justfile` at project root with `docs-dev`, `docs-build`, `docs-serve` recipes                  | 1  | Setup  | T008         | /Users/jordanknight/repos/hve-core/justfile                 | `just docs-dev` launches dev server; `just docs-build` runs production build; `just docs-serve` serves built site | –        | Convenience commands for local dev |
 
 ---
 
@@ -315,7 +316,7 @@ npm run build
 * [x] Pre-Implementation Audit complete — all greenfield
 * [x] Requirements Traceability verified — no gaps
 * [x] All commands specified with absolute paths
-* [ ] **Human GO/NO-GO**: Approve to proceed with implementation
+* [x] **Human GO/NO-GO**: Approved — implementation complete
 
 ---
 
@@ -335,6 +336,8 @@ npm run build
 |---|---|
 | Execution log | `docs/plans/002-docusaurus-site/tasks/phase-1-scaffold-docusaurus-project/execution.log.md` |
 | Built site | `docs/docusaurus/build/` (gitignored) |
+| Docusaurus config | `docs/docusaurus/docusaurus.config.js` |
+| Justfile | `justfile` |
 
 ---
 
@@ -344,7 +347,8 @@ npm run build
 
 | Date | Task | Type | Discovery | Resolution | References |
 |------|------|------|-----------|------------|------------|
-| | | | | | |
+| 2026-02-18 | T007 | gotcha | Multi-edit passes on JS config files can silently drop closing braces — T003 removed `},` from navbar items causing ParseError at line 89 | Fixed by restoring `},` and adding missing `label: 'GitHub'` | log#task-t007 |
+| 2026-02-18 | T002 | insight | Root `.npmrc` `save-exact=true` does NOT cascade to `docs/docusaurus/` — npm resolves config from nearest `package.json` upward. Scaffold deps use `^` ranges, which is consistent | No action needed — documented for awareness | log#task-t002 |
 
 **Types**: `gotcha` | `research-needed` | `unexpected-behavior` | `workaround` | `decision` | `debt` | `insight`
 
