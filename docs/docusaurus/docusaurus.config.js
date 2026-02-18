@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'HVE Core',
-  tagline: 'Hyper Velocity Engineering for the Full Software Delivery Lifecycle',
+  tagline: 'HyperVelocity Engineering for the Full Software Delivery Lifecycle',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

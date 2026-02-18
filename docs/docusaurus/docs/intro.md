@@ -1,16 +1,16 @@
 ---
 sidebar_position: 1
-title: What is Hyper Velocity Engineering?
+title: What is HyperVelocity Engineering?
 description: Understanding the value delivery loop and how HVE-Core shortens the entire software delivery lifecycle, not just the build phase
 ---
 
-# What is Hyper Velocity Engineering?
+# What is HyperVelocity Engineering?
 
 Most engineering teams optimize for code velocity. Faster builds. Faster deploys. Faster CI pipelines. Those investments pay off, but only in phases ③ and ④ of the value delivery loop.
 
 Meanwhile, a product manager spends three weeks turning a business need into a coherent set of requirements. A tech lead spends another week breaking those requirements into work items that developers can actually act on. After the code ships, nobody closes the loop to ask: did this actually solve the problem?
 
-Hyper Velocity Engineering is the practice of shortening the *entire* value delivery loop, not just the build-and-verify phases. It is the difference between "we deploy 47 times a day" and "we consistently deliver the right thing, fast, with confidence."
+HyperVelocity Engineering is the practice of shortening the *entire* value delivery loop, not just the build-and-verify phases. It is the difference between "we deploy 47 times a day" and "we consistently deliver the right thing, fast, with confidence."
 
 ## The Value Delivery Loop
 

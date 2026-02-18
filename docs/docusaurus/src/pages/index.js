@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <Layout
       title="AI-Driven Software Delivery"
-      description="Hyper Velocity Engineering for the full software delivery lifecycle — from shaping requirements to shipping and learning">
+      description="HyperVelocity Engineering for the full software delivery lifecycle — from shaping requirements to shipping and learning">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
