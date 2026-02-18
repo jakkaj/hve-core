@@ -1,0 +1,78 @@
+# Deploy the Docusaurus documentation site to GitHub Pages.
+#
+# Prerequisites:
+#   1. Enable GitHub Pages in repo settings:
+#      Settings → Pages → Source → "GitHub Actions"
+#   2. The site builds from docs/docusaurus/ with baseUrl: '/hve-core/'
+#
+# Triggers on docs content changes to main (or jordo-explore for testing).
+# Remove jordo-explore from branches before merging to upstream.
+
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+      - jordo-explore
+    paths:
+      - 'docs/docusaurus/**'
+      - '.github/workflows/deploy-docs.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Docusaurus
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v4.1.0
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: docs/docusaurus/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: docs/docusaurus
+
+      - name: Build site
+        run: npm run build
+        working-directory: docs/docusaurus
+
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
+        with:
+          path: docs/docusaurus/build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

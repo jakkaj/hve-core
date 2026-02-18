@@ -312,9 +312,9 @@ The `docusaurus-edits.instructions.md` must cover:
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 3.1 | [ ] | Look up SHA pins for `actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages` | 1 | Correct SHAs identified with version comments | - | |
-| 3.2 | [ ] | Create `.github/workflows/deploy-docs.yml` with build + deploy jobs | 2 | Workflow uses SHA-pinned actions, `ubuntu-latest`, explicit permissions, path filter, concurrency group | - | |
-| 3.3 | [ ] | Add `workflow_dispatch` trigger for manual deployment | 1 | Can trigger manually from Actions tab | - | |
+| 3.1 | [x] | Look up SHA pins for `actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages` | 1 | Correct SHAs identified with version comments | - | |
+| 3.2 | [x] | Create `.github/workflows/deploy-docs.yml` with build + deploy jobs | 2 | Workflow uses SHA-pinned actions, `ubuntu-latest`, explicit permissions, path filter, concurrency group | - | |
+| 3.3 | [x] | Add `workflow_dispatch` trigger for manual deployment | 1 | Can trigger manually from Actions tab | - | |
 
 ### Workflow Requirements
 
@@ -330,11 +330,11 @@ The `docusaurus-edits.instructions.md` must cover:
 
 ### Acceptance Criteria
 
-* [ ] Workflow file exists at `.github/workflows/deploy-docs.yml`
-* [ ] All actions are SHA-pinned with version comments
-* [ ] Workflow triggers only on `docs/docusaurus/**` changes + manual dispatch
-* [ ] Build job runs in `docs/docusaurus/` working directory
-* [ ] Deploy job uses `github-pages` environment
+* [x] Workflow file exists at `.github/workflows/deploy-docs.yml`
+* [x] All actions are SHA-pinned with version comments
+* [x] Workflow triggers only on `docs/docusaurus/**` changes + manual dispatch
+* [x] Build job runs in `docs/docusaurus/` working directory
+* [x] Deploy job uses `github-pages` environment
 
 ---
 
@@ -425,7 +425,7 @@ These principles apply across Phases 2, 2B, 2C, and 2D:
 * [x] Phase 2B: Content — Shape the Work
 * [x] Phase 2C: Content — Build the Work
 * [x] Phase 2D: Content — Ship It & Reference
-* [ ] Phase 3: GitHub Actions Deploy Workflow
+* [x] Phase 3: GitHub Actions Deploy Workflow
 * [ ] Phase 4: Integration and Validation
 
 ### STOP Rule
@@ -442,3 +442,4 @@ This plan must be validated before creating tasks. After reviewing this plan:
 [^3]: Phase 2B implemented 2026-02-18. 7 tasks complete. 4 content pages (shape-the-work/) + category config + cross-links to Getting Started + instructions file conventions update. Build verified zero errors.
 [^4]: Phase 2C implemented 2026-02-18. 9 tasks complete. 6 content pages (build-the-work/) including RPI crown jewel + category config + resolved 5 forward-link TODOs + added intro.md Build link. Build verified zero errors.
 [^5]: Phase 2D implemented 2026-02-18. 12 tasks complete. 8 content pages (4 ship-it/ + 4 reference/) + 2 category configs + resolved all remaining forward-link TODOs (intro.md, quick-start.md, coding-standards.md). Artifact catalog has 75 artifacts (25 instructions incl. docusaurus-edits). 5 DYK insights applied. Build verified zero errors, all pages HTTP 200.
+[^6]: Phase 3 implemented 2026-02-18. 2 tasks complete. Created `.github/workflows/deploy-docs.yml` with 5 SHA-pinned actions, path filter on `docs/docusaurus/**` + self-reference, `jordo-explore` branch for testing (temporary), prerequisite comment for Pages config. All 11 structural checks pass.
