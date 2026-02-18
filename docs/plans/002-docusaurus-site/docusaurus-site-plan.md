@@ -235,20 +235,20 @@ The `docusaurus-edits.instructions.md` must cover:
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 2C.1 | [ ] | Create `build-the-work/` category: `_category_.json` (position: 3, label: "Build the Work") | 1 | Category appears third in sidebar | - | |
-| 2C.2 | [ ] | Create `build-the-work/overview.md` (sidebar_position: 1) — Cognitive separation insight. SPACE connection: constrained phases optimize Communication + Efficiency dimensions | 2 | Educational framing present, links to RPI page | - | |
-| 2C.3 | [ ] | Create `build-the-work/rpi-workflow.md` (sidebar_position: 2) — 5-phase loop diagram, strict vs autonomous modes, artifact data bus, handoff button chain, decision guide. Multiple mermaid diagrams | 3 | Full RPI flow documented with diagrams, both modes explained | - | **Crown jewel of entire site** |
-| 2C.4 | [ ] | Create `build-the-work/rpi-in-practice.md` (sidebar_position: 3) — Complete walkthrough with actual prompts, artifacts produced per phase, /clear in action, iteration loop example | 2 | Walkthrough complete with code blocks showing prompts | - | |
-| 2C.5 | [ ] | Create `build-the-work/code-review-prs.md` (sidebar_position: 4) — PR generation, pr-review agent, git operations, ADO PR linking | 2 | Git workflow documented, links to relevant prompts | - | |
-| 2C.6 | [ ] | Create `build-the-work/coding-standards.md` (sidebar_position: 5) — applyTo mechanism, invisible guardrails, available standards list, how to add custom standards, the plan .instructions.md trick | 2 | applyTo explained clearly, language list present | - | |
-| 2C.7 | [ ] | Create `build-the-work/data-science.md` (sidebar_position: 6) — Implicit pipeline: gen-data-spec → notebook → dashboard → test. Why no orchestrator (and that's okay) | 1 | Pipeline documented, honest about implicit nature | - | |
+| 2C.1 | [x] | Create `build-the-work/` category: `_category_.json` (position: 3, label: "Build the Work") | 1 | Category appears third in sidebar | - | |
+| 2C.2 | [x] | Create `build-the-work/overview.md` (sidebar_position: 1) — Cognitive separation insight. SPACE connection: constrained phases optimize Communication + Efficiency dimensions | 2 | Educational framing present, links to RPI page | - | |
+| 2C.3 | [x] | Create `build-the-work/rpi-workflow.md` (sidebar_position: 2) — 5-phase loop diagram, strict vs autonomous modes, artifact data bus, handoff button chain, decision guide. Multiple mermaid diagrams | 3 | Full RPI flow documented with diagrams, both modes explained | - | **Crown jewel of entire site** |
+| 2C.4 | [x] | Create `build-the-work/rpi-in-practice.md` (sidebar_position: 3) — Complete walkthrough with actual prompts, artifacts produced per phase, /clear in action, iteration loop example | 2 | Walkthrough complete with code blocks showing prompts | - | |
+| 2C.5 | [x] | Create `build-the-work/code-review-prs.md` (sidebar_position: 4) — PR generation, pr-review agent, git operations, ADO PR linking | 2 | Git workflow documented, links to relevant prompts | - | |
+| 2C.6 | [x] | Create `build-the-work/coding-standards.md` (sidebar_position: 5) — applyTo mechanism, invisible guardrails, available standards list, how to add custom standards, the plan .instructions.md trick | 2 | applyTo explained clearly, language list present | - | |
+| 2C.7 | [x] | Create `build-the-work/data-science.md` (sidebar_position: 6) — Implicit pipeline: gen-data-spec → notebook → dashboard → test. Why no orchestrator (and that's okay) | 1 | Pipeline documented, honest about implicit nature | - | |
 
 ### Acceptance Criteria
 
-* [ ] `build-the-work/` category visible with 6 ordered pages
-* [ ] RPI flow page has multiple mermaid diagrams rendering correctly
-* [ ] RPI in practice page has code blocks with example prompts
-* [ ] Cross-links between all pages work
+* [x] `build-the-work/` category visible with 6 ordered pages
+* [x] RPI flow page has multiple mermaid diagrams rendering correctly
+* [x] RPI in practice page has code blocks with example prompts
+* [x] Cross-links between all pages work
 
 ---
 
@@ -423,7 +423,7 @@ These principles apply across Phases 2, 2B, 2C, and 2D:
 * [x] Phase 1: Scaffold Docusaurus Project
 * [x] Phase 2: Content — Getting Started & Instructions File
 * [x] Phase 2B: Content — Shape the Work
-* [ ] Phase 2C: Content — Build the Work
+* [x] Phase 2C: Content — Build the Work
 * [ ] Phase 2D: Content — Ship It & Reference
 * [ ] Phase 3: GitHub Actions Deploy Workflow
 * [ ] Phase 4: Integration and Validation
@@ -440,3 +440,4 @@ This plan must be validated before creating tasks. After reviewing this plan:
 [^1]: Phase 1 implemented 2026-02-18. All 9 tasks complete. Docusaurus 3.9.2 scaffolded at docs/docusaurus/ with Mermaid theme, blog disabled, baseUrl /hve-core/. Justfile created. Dev server and build verified.
 [^2]: Phase 2 implemented 2026-02-18. 10 tasks complete (T007 removed per DYK). 5 content pages + 1 instructions file + sidebar rename. Build verified zero errors, all pages HTTP 200.
 [^3]: Phase 2B implemented 2026-02-18. 7 tasks complete. 4 content pages (shape-the-work/) + category config + cross-links to Getting Started + instructions file conventions update. Build verified zero errors.
+[^4]: Phase 2C implemented 2026-02-18. 9 tasks complete. 6 content pages (build-the-work/) including RPI crown jewel + category config + resolved 5 forward-link TODOs + added intro.md Build link. Build verified zero errors.

@@ -61,9 +61,7 @@ flowchart TD
 
 A PRD feeds directly into issue discovery: run `/github-discover-issues` against a completed PRD and HVE-Core extracts requirements, matches them against existing issues, and plans the backlog changes. See [Backlog Management](backlog-management) for how this works.
 
-ADRs, security plans, and architecture diagrams feed the Research phase of the RPI workflow. When a task researcher encounters a task that touches authentication, it reads the relevant ADR to understand the constraints before proposing changes.
-
-<!-- TODO: link to build-the-work/rpi-workflow when Phase 2C lands -->
+ADRs, security plans, and architecture diagrams feed the Research phase of the [RPI workflow](../build-the-work/rpi-workflow). When a task researcher encounters a task that touches authentication, it reads the relevant ADR to understand the constraints before proposing changes.
 
 ## Example: Walking Through a PRD Session
 

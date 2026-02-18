@@ -50,9 +50,6 @@ HVE-Core does not yet cover OKR and roadmap tooling, portfolio-level prioritizat
 
 ## How This Connects
 
-Sprint-ready work items produced by shaping become the input to the Build the Work phase. When an engineer picks up an issue, they invoke the RPI workflow (Research → Plan → Implement → Review), which begins by reading the issue's acceptance criteria and context that shaping produced. The quality of upstream shaping directly determines the quality of downstream implementation.
-
-<!-- TODO: link to build-the-work/overview when Phase 2C lands -->
-<!-- TODO: link to build-the-work/rpi-workflow when Phase 2C lands -->
+Sprint-ready work items produced by shaping become the input to the [Build the Work](../build-the-work/overview) phase. When an engineer picks up an issue, they invoke the [RPI workflow](../build-the-work/rpi-workflow) (Research → Plan → Implement → Review), which begins by reading the issue's acceptance criteria and context that shaping produced. The quality of upstream shaping directly determines the quality of downstream implementation.
 
 For the conceptual foundation behind this workflow, see [The Value Delivery Loop](../getting-started/value-delivery-loop). To understand how the architecture enables these flows, see [How It Works](../getting-started/how-it-works).

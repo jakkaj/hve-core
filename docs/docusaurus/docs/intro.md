@@ -59,8 +59,9 @@ HVE-Core is a collection of prompts, agents, instructions, and skills for GitHub
 
 **Strong coverage in [shaping work](shape-the-work/overview)**: PRD builders, [backlog management flows](shape-the-work/backlog-management), architecture decision records, security planning. The GitHub Backlog Manager orchestrates a complete pipeline from issue discovery through sprint planning.
 
-**Deep coverage in building work**: The RPI (Research → Plan → Implement → Review) workflow provides phase-separated AI assistance that produces better results than unconstrained "just code it" approaches. Six language-specific instruction files apply coding conventions automatically. Code review, PR generation, and git operations are comprehensive.
+**Deep coverage in [building work](build-the-work/overview)**: The [RPI](build-the-work/rpi-workflow) (Research → Plan → Implement → Review) workflow provides phase-separated AI assistance that produces better results than unconstrained "just code it" approaches. Six language-specific instruction files apply coding conventions automatically. Code review, PR generation, and git operations are comprehensive.
 
+<!-- TODO: link to ship-it/overview when Phase 2D lands -->
 **Emerging coverage in shipping**: Incident response workflows, IaC coding conventions for Bicep and Terraform, and operational risk assessment.
 
 :::note What's on the horizon

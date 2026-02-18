@@ -74,8 +74,7 @@ Open Copilot Chat in a repository with an open issue or task. Type `/rpi` and po
 | `@pr-review` | Code review focused on bugs, security, and logic errors (not style) | `@pr-review` in Copilot Chat |
 | `/git-commit` | Stage changes, generate conventional commit messages, commit | `/git-commit` in Copilot Chat |
 
-<!-- TODO: Add link to build-the-work/overview when Phase 2C lands -->
-**Go deeper**: The Build the Work section covers the RPI workflow, code review, coding standards, and data science workflows.
+**Go deeper**: [Build the Work](../build-the-work/overview) covers the RPI workflow, code review, coding standards, and data science workflows.
 
 ## Path C: Release Safely and Learn from Production
 

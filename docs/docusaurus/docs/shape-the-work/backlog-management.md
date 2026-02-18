@@ -76,9 +76,7 @@ Add batch label operations to the triage workflow agent.
 - [ ] Support undo of batch label changes
 ```
 
-That same issue becomes the input to the RPI workflow. When an engineer picks it up, the Research phase begins, reading the issue, understanding the codebase, and producing an implementation plan. The loop closes: requirements defined in Shape the Work become tasks executed in Build the Work.
-
-<!-- TODO: link to build-the-work/rpi-workflow when Phase 2C lands -->
+That same issue becomes the input to the [RPI workflow](../build-the-work/rpi-workflow). When an engineer picks it up, the Research phase begins, reading the issue, understanding the codebase, and producing an implementation plan. The loop closes: requirements defined in Shape the Work become tasks executed in [Build the Work](../build-the-work/overview).
 
 For teams using Azure DevOps instead of GitHub, see [ADO Integration](ado-integration) for the equivalent workflow.
 
