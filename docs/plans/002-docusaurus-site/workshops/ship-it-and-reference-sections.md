@@ -1387,3 +1387,15 @@ Phase 2 of the site plan should include these 8 pages (4 Ship It + 4 Reference) 
 | Reference: All Artifacts A-Z | High | 74 artifacts to catalog with accurate metadata |
 
 Total: 8 pages, estimated 3-4 hours of focused writing time.
+
+---
+
+## Design Thinking Integration Notes (from review)
+
+These suggestions should be applied during Phase 2D content authoring:
+
+**Empathy moment for Ship It opening** (Suggestion #2): Add concrete scenario: "You shipped on Friday. The deploy was green. Monday morning, the dashboard shows a 12% error rate spike that started Saturday at 2 AM. The feature worked in staging. Production has 40x the traffic and three integrations staging doesn't test. Nobody closed the loop."
+
+**Feedback loops for the site itself** (Suggestion #5): The "What's Coming" page should include a contribution path per page, not just "edit this page" but "tell us what's missing." Consider a "Was this page helpful?" custom component recommendation (deferred to Phase 4 or future enhancement).
+
+**Design Decisions transparency** (Suggestion #7): Add a "Design Decisions" section to the Reference pages documenting: why 4 segments not 6, the artifact value assessment methodology, the "concept before tool" and "honest gaps" design principles, and references to the workshops as design artifacts. Could use the ADR creation agent to formalize these.

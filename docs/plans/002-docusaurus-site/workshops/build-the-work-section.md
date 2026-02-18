@@ -837,3 +837,13 @@ Dependencies on other workshops:
 * The Coding Standards Gallery workshop informs Page 5 visual format
 
 No changes to the existing segment structure from the Value Delivery Segments workshop. This workshop deepens Segment 2 without altering the top-level architecture.
+
+---
+
+## Design Thinking Integration Notes (from review)
+
+These suggestions should be applied during Phase 2C content authoring:
+
+**Empathy moment for page 1 opening** (Suggestion #2): Elevate the "failure mode you'll recognize" pattern from why-rpi.md as a consistent cross-section element.
+
+**"Constraint changes behavior" as design pattern** (Suggestion #8): Reframe the cognitive separation insight on the Overview page as a design principle, not just an engineering technique. Connect to design thinking's "creative constraints" concept: "A brainstorming session with 'no bad ideas' produces worse results than one with 'solutions must cost under $100.' An AI with 'you can do anything' produces worse code than one with 'you can only research right now.'"

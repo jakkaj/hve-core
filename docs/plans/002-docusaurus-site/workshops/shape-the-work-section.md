@@ -764,3 +764,13 @@ Phase 2 content authoring for the "Shape the Work" section should follow the pag
 | ADO Integration (position 4) | This workshop, Page 4 design | ADO instruction files, Page 3 authored first |
 
 Authoring order recommendation: Overview → Requirements & Architecture → Backlog Management → ADO Integration. Each page builds on concepts introduced in the previous one, and the ADO page explicitly references the GitHub page for shared concepts.
+
+---
+
+## Design Thinking Integration Notes (from review)
+
+These suggestions should be applied during Phase 2B content authoring:
+
+**Empathy moment for page 1 opening** (Suggestion #2): Add a concrete "The moment you'll recognize" block for PMs/TPMs. Example: "You've been in the meeting. Someone says 'we need a better onboarding experience.' Three sprints later, engineering delivers something that technically matches the ticket but misses the actual problem."
+
+**Problem framing teaching** (Suggestion #3): The Requirements & Architecture page should explicitly teach problem framing as a skill. Cover problem statements vs solution requests ("We need a mobile app" vs "Expense reporting takes 45 minutes"), the "5 Whys" applied to requirements, and diverge-then-converge in requirements (BRD builder as convergent tool after divergent discovery phase).
