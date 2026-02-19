@@ -6,6 +6,10 @@ description: Understanding the value delivery loop and how HVE-Core shortens the
 
 # What is HyperVelocity Engineering?
 
+:::caution Draft Content
+This page is not finalised. The definition of HyperVelocity Engineering presented here is a working draft and does not yet accurately represent the full HVE concept. Content will be revised as the definition is refined.
+:::
+
 Most engineering teams optimize for code velocity. Faster builds. Faster deploys. Faster CI pipelines. Those investments pay off, but only in phases ③ and ④ of the value delivery loop.
 
 Meanwhile, a product manager spends three weeks turning a business need into a coherent set of requirements. A tech lead spends another week breaking those requirements into work items that developers can actually act on. After the code ships, nobody closes the loop to ask: did this actually solve the problem?
