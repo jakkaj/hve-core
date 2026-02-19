@@ -95,3 +95,91 @@ Two repos are in play:
 2. **`/Users/jordanknight/repos/hve-core-docs-pr/`** — git worktree from same fork, branch `docs/docusaurus-site`, based on `upstream/main` @ `11b93cb`. Contains the minimal clean Docusaurus site for upstream PR. This is where T017 changes go.
 
 The only remaining work is T017 (pre-PR cleanup) which the user will trigger when ready. It involves editing `docusaurus.config.js` and `deploy-docs.yml` in the worktree to swap test URLs to production values.
+
+## Worktree Setup Guide (for new agent)
+
+The dual-repo workflow uses a git worktree so planning stays on one branch while implementation lives on a clean branch destined for upstream. If you need to recreate this setup (the worktree directory was removed, or you're on a fresh machine after cloning `jakkaj/hve-core`):
+
+### Prerequisites
+
+You should already have the fork cloned:
+
+```bash
+cd /Users/jordanknight/repos/hve-core
+git branch --show-current
+# Should be: jordo-explore
+```
+
+### Step 1: Ensure remotes are configured
+
+```bash
+git remote -v
+# origin    https://github.com/jakkaj/hve-core.git (fetch/push)
+# upstream  https://github.com/microsoft/hve-core.git (fetch/push)
+
+# If upstream is missing:
+git remote add upstream https://github.com/microsoft/hve-core.git
+```
+
+### Step 2: Sync fork's main with upstream
+
+```bash
+git fetch upstream
+git push origin upstream/main:main
+```
+
+### Step 3: Create the worktree
+
+The worktree checks out the `docs/docusaurus-site` branch (which already exists on origin) into a sibling directory:
+
+```bash
+git fetch origin docs/docusaurus-site
+git worktree add ../hve-core-docs-pr origin/docs/docusaurus-site
+```
+
+This creates `/Users/jordanknight/repos/hve-core-docs-pr/` with the `docs/docusaurus-site` branch checked out.
+
+### Step 4: Install dependencies in worktree
+
+```bash
+cd /Users/jordanknight/repos/hve-core-docs-pr/docs/docusaurus
+npm install
+```
+
+### Step 5: Verify
+
+```bash
+npm run build   # Should succeed with zero errors
+npm start       # Dev server at localhost:3000/hve-core/
+```
+
+### The Two-Directory Rule
+
+| Directory | Branch | Purpose | What goes here |
+|-----------|--------|---------|----------------|
+| `/Users/jordanknight/repos/hve-core/` | `jordo-explore` | Planning & research | `docs/plans/`, comparison reports, handover docs, full site (plan 002) |
+| `/Users/jordanknight/repos/hve-core-docs-pr/` | `docs/docusaurus-site` | Implementation for upstream PR | Docusaurus site, workflow, instructions — only clean deliverables |
+
+Plan files **never** go into the worktree. Implementation changes **never** go on jordo-explore.
+
+### If the worktree already exists
+
+Check with:
+
+```bash
+git worktree list
+```
+
+If it shows `../hve-core-docs-pr` already linked, just `cd` into it — no setup needed.
+
+### Removing a worktree (cleanup)
+
+```bash
+git worktree remove ../hve-core-docs-pr
+```
+
+### GitHub Pages Environment
+
+For the deploy workflow to succeed on the fork, the `docs/docusaurus-site` branch must be allowed in the `github-pages` environment:
+
+**Settings → Environments → `github-pages` → Deployment branches → Add rule → `docs/docusaurus-site`**
