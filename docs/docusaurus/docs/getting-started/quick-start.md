@@ -6,6 +6,10 @@ sidebar_position: 3
 
 # Quick Start: Choose Your Path
 
+:::caution Draft Content
+This page is not finalised. Paths and recommendations are working drafts subject to revision.
+:::
+
 HVE-Core provides 70+ artifacts across the full delivery lifecycle. This page helps you find the right starting point for your role and goals.
 
 Your role determines which artifacts matter. A product manager managing a GitHub backlog uses completely different tools than an engineer implementing a feature, who uses completely different tools than a platform engineer responding to a production incident.

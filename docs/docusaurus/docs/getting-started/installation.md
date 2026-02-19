@@ -6,6 +6,10 @@ sidebar_position: 4
 
 # Installation
 
+:::caution Draft Content
+This page is not finalised. Installation steps and configuration details are working drafts subject to revision.
+:::
+
 HVE-Core is distributed as a VS Code extension that provides prompts, agents, instructions, and skills to GitHub Copilot. Installation takes under 2 minutes.
 
 ## Prerequisites

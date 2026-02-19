@@ -6,6 +6,10 @@ sidebar_position: 1
 
 # The Value Delivery Loop
 
+:::caution Draft Content
+This page is not finalised. The value delivery loop model and metric mappings are working drafts subject to revision.
+:::
+
 Software delivery is often drawn as a pipeline: requirements go in one end, deployed features come out the other. This mental model is comforting and wrong.
 
 In practice, delivery is a loop. Learnings from production reshape priorities. Failed verifications send work back to development. Scope questions during build feed back to shaping. The "pipeline" metaphor obscures these feedback arcs, and obscured feedback arcs are where organizations lose velocity.

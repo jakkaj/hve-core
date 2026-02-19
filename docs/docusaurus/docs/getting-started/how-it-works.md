@@ -6,6 +6,10 @@ sidebar_position: 2
 
 # How HVE-Core Works
 
+:::caution Draft Content
+This page is not finalised. Architecture descriptions and artifact details are working drafts subject to revision.
+:::
+
 HVE-Core is not a single tool. It is a system of four artifact types that work together. Understanding these layers explains why using HVE-Core feels different from other AI coding assistants.
 
 ## Four Layers, One System
