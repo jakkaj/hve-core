@@ -33,7 +33,7 @@ description: Implementation plan for creating a Docusaurus 3 documentation site 
 
 ## Executive Summary
 
-Create a Docusaurus 3 documentation site at `docs/docusaurus/` that serves as both a user guide and an educational resource for Hyper Velocity Engineering. The site teaches the full Software Value Delivery lifecycle (DORA, SPACE, ESSP frameworks) and shows where HVE-Core tooling fits within each phase — honestly, including gaps.
+Create a Docusaurus 3 documentation site at `docs/docusaurus/` that serves as both a user guide and an educational resource for HyperVelocity Engineering. The site teaches the full Software Value Delivery lifecycle (DORA, SPACE, ESSP frameworks) and shows where HVE-Core tooling fits within each phase — honestly, including gaps.
 
 The site is organized into four delivery-aligned segments: **Shape the Work** (requirements, backlog), **Build the Work** (RPI flow, coding), **Ship It** (deployment, feedback loops), plus **Getting Started** (concepts, architecture, onboarding). A **Reference** section provides the artifact catalog and schemas.
 
@@ -152,7 +152,7 @@ This is a documentation site scaffold — no application logic to unit test. Val
 
 | # | Status | Task | CS | Success Criteria | Log | Notes |
 |---|---|---|---|---|---|---|
-| 2.1 | [x] | Create `docs/docusaurus/docs/intro.md` — "What is Hyper Velocity Engineering?" with `sidebar_position: 1`. Include value delivery loop mermaid diagram, "where value leaks" framing, DORA/SPACE/ESSP summary, coverage heatmap | 2 | Page renders first in sidebar, mermaid renders, educational framing present | - | Hero concept page |
+| 2.1 | [x] | Create `docs/docusaurus/docs/intro.md` — "What is HyperVelocity Engineering?" with `sidebar_position: 1`. Include value delivery loop mermaid diagram, "where value leaks" framing, DORA/SPACE/ESSP summary, coverage heatmap | 2 | Page renders first in sidebar, mermaid renders, educational framing present | - | Hero concept page |
 | 2.2 | [x] | Create `getting-started/` category: `_category_.json` (position: 1, label: "Getting Started") | 1 | Category appears first in sidebar | - | |
 | 2.3 | [x] | Create `getting-started/value-delivery-loop.md` (sidebar_position: 1) — deep-dive on the 6 phases with per-phase: what happens, who's involved, what can go wrong, which DORA/SPACE metrics apply | 2 | Page renders with structured phase sections | - | Reference page |
 | 2.4 | [x] | Create `getting-started/how-it-works.md` (sidebar_position: 2) — 4-layer architecture (Prompts→Agents→Instructions→Skills), applyTo mechanism, handoff buttons, /clear boundaries, .copilot-tracking artifact bus. Include mermaid architecture diagram | 2 | Page renders with architecture diagram, applyTo explanation clear | - | |

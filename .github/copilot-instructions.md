@@ -32,7 +32,7 @@ Rules for fixing errors:
 <!-- <project-structure> -->
 ## Project Structure
 
-This repository contains documentation, scripts, and tooling for the HVE (Hyper Velocity Engineering) Core project.
+This repository contains documentation, scripts, and tooling for the HVE (HyperVelocity Engineering) Core project.
 
 ### Directory Organization
 

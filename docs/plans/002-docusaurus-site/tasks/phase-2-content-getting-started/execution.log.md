@@ -10,7 +10,7 @@
 **Status**: ✅ Complete
 
 ### What I Did
-Replaced placeholder intro.md with "What is Hyper Velocity Engineering?" page. Includes value delivery loop Mermaid diagram (6-phase circular with colored phases), "Where Organizations Leak Value" framing, DORA/SPACE/ESSP framework summaries, honest "What's not here yet" admonition, 6-line coverage heatmap with maintenance TODO comment, and Next Steps cross-link.
+Replaced placeholder intro.md with "What is HyperVelocity Engineering?" page. Includes value delivery loop Mermaid diagram (6-phase circular with colored phases), "Where Organizations Leak Value" framing, DORA/SPACE/ESSP framework summaries, honest "What's not here yet" admonition, 6-line coverage heatmap with maintenance TODO comment, and Next Steps cross-link.
 
 ### Evidence
 File is 95 lines with valid frontmatter (title, description, sidebar_position: 1). Contains 1 Mermaid diagram, 1 admonition (:::note), 1 heatmap, and 1 internal link to getting-started/.

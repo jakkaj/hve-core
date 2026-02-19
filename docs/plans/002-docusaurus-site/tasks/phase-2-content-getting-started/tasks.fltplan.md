@@ -11,7 +11,7 @@
 
 **Where we are**: Phase 1 delivered a working Docusaurus 3.9.2 project at `docs/docusaurus/` with Mermaid rendering enabled, blog disabled, and `baseUrl: '/hve-core/'` configured for GitHub Pages. The site builds and serves locally via `just docs-dev`, but contains only a single placeholder `intro.md` page. A user visiting the site sees a default Docusaurus hero and one line of placeholder text.
 
-**Where we're going**: By the end of this phase, a user visiting the site will land on a conceptual overview of Hyper Velocity Engineering with an interactive value delivery loop diagram. They can navigate through four Getting Started pages — learning about the 6 delivery phases, understanding HVE-Core's 4-layer architecture, and being routed to the right section based on their role (Product, Engineering, or Platform). An instructions file will auto-apply Docusaurus conventions to all future content edits.
+**Where we're going**: By the end of this phase, a user visiting the site will land on a conceptual overview of HyperVelocity Engineering with an interactive value delivery loop diagram. They can navigate through four Getting Started pages — learning about the 6 delivery phases, understanding HVE-Core's 4-layer architecture, and being routed to the right section based on their role (Product, Engineering, or Platform). An instructions file will auto-apply Docusaurus conventions to all future content edits.
 
 ---
 
@@ -50,7 +50,7 @@ stateDiagram-v2
 
 <!-- Updated by /plan-6 during implementation: [ ] → [~] → [x] -->
 
-- [ ] **Stage 1: Write the hero concept page** — replace placeholder `intro.md` with "What is Hyper Velocity Engineering?" featuring value delivery loop Mermaid diagram, coverage heatmap, and DORA/SPACE/ESSP summary (`docs/docusaurus/docs/intro.md`)
+- [ ] **Stage 1: Write the hero concept page** — replace placeholder `intro.md` with "What is HyperVelocity Engineering?" featuring value delivery loop Mermaid diagram, coverage heatmap, and DORA/SPACE/ESSP summary (`docs/docusaurus/docs/intro.md`)
 - [ ] **Stage 2: Create Getting Started category** — add `_category_.json` with position 1 and create the category directory (`docs/docusaurus/docs/getting-started/_category_.json` — new file)
 - [ ] **Stage 3: Write Value Delivery Loop page** — deep-dive on 6 phases with feedback arcs diagram, per-phase activities/stakeholders/failure modes, DORA mapping table, SPACE × Phase matrix (`getting-started/value-delivery-loop.md` — new file)
 - [ ] **Stage 4: Write How It Works page** — 4-layer architecture diagram, `applyTo` mechanism, `/clear` boundary pattern, `.copilot-tracking/` artifact bus, "How This Differs from ChatGPT" (`getting-started/how-it-works.md` — new file)

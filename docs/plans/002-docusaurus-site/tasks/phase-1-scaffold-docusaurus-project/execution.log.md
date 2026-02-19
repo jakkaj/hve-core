@@ -90,7 +90,7 @@ Deleted `tutorial-basics/` and `tutorial-extras/` directories. Replaced default 
 $ ls docs/docusaurus/docs/
 intro.md
 ```
-Frontmatter: `title: Welcome to HVE Core`, `description: Hyper Velocity Engineering...`, `sidebar_position: 1`
+Frontmatter: `title: Welcome to HVE Core`, `description: HyperVelocity Engineering...`, `sidebar_position: 1`
 
 ### Files Changed
 - `docs/docusaurus/docs/tutorial-basics/` — deleted

@@ -16,7 +16,7 @@
 
 ## Purpose
 
-Design the four pages that live under "Getting Started" in the site sidebar. These pages do the heaviest conceptual lifting on the entire site: they teach what Hyper Velocity Engineering *is*, why the value delivery loop matters, how HVE-Core's architecture works, and where each user should go first.
+Design the four pages that live under "Getting Started" in the site sidebar. These pages do the heaviest conceptual lifting on the entire site: they teach what HyperVelocity Engineering *is*, why the value delivery loop matters, how HVE-Core's architecture works, and where each user should go first.
 
 Every other section on the site assumes the reader has absorbed these pages. Getting them right is the difference between "oh, this is a prompt library" and "oh, this changes how I think about AI-assisted delivery."
 
@@ -37,7 +37,7 @@ Every other section on the site assumes the reader has absorbed these pages. Get
 
 ---
 
-## Page 1: What is Hyper Velocity Engineering?
+## Page 1: What is HyperVelocity Engineering?
 
 **Sidebar position**: 1
 **Slug**: `getting-started/what-is-hve`
@@ -137,7 +137,7 @@ graph TB
 >
 > Meanwhile, a product manager spends three weeks turning a business need into a coherent set of requirements. A tech lead spends another week breaking those requirements into work items that developers can actually act on. After the code ships, nobody closes the loop to ask: did this actually solve the problem?
 >
-> Hyper Velocity Engineering is the practice of shortening the *entire* value delivery loop, not just the build-and-verify phases. It's the difference between "we deploy 47 times a day" and "we consistently deliver the right thing, fast, with confidence."
+> HyperVelocity Engineering is the practice of shortening the *entire* value delivery loop, not just the build-and-verify phases. It's the difference between "we deploy 47 times a day" and "we consistently deliver the right thing, fast, with confidence."
 
 #### Where Organizations Leak Value
 
@@ -664,7 +664,7 @@ Each page uses standard Docusaurus frontmatter:
 ```yaml
 ---
 sidebar_position: 1
-title: What is Hyper Velocity Engineering?
+title: What is HyperVelocity Engineering?
 description: Understanding the value delivery loop and how HVE-Core shortens it
 ---
 ```
