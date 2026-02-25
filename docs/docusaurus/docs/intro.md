@@ -92,3 +92,4 @@ This distribution is not accidental. HVE-Core invested where AI-assisted workflo
 
 Start with the [Value Delivery Loop](getting-started/value-delivery-loop) to understand the delivery model in depth, then learn [how the architecture works](getting-started/how-it-works) and find the [right entry point for your role](getting-started/quick-start).
 
+
